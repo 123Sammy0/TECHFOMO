@@ -7,7 +7,7 @@ import { useFilter } from '@/lib/filter-context';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const overlayRef = useRef<HTMLDivElement>(null);
-  const hamburgerRef = useRef<HTMLDivElement>(null);
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
   const searchModalRef = useRef<HTMLDivElement>(null);
   const [weather, setWeather] = useState<string>('...');
   const [searchOpen, setSearchOpen] = useState(false);
